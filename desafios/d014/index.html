@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        .centro {
+            text-align: center;
+        }
+
+        .esquerda {
+            text-align: left;
+        }
+
+        .inverso {
+            background-color: #7e7e7e;
+            color: white;
+        }
+
+        .realce {
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr class="inverso">
+            <th rowspan="2" scope="col">Área</th>
+            <th rowspan="2" scope="col">Disciplinas</th>
+            <th colspan="2" scope="colgroup">Notas</th>
+            <th rowspan="2" scope="col">Média</th>
+        </tr>
+        <tr class="inverso">
+            <th scope="col">Nota 1</th>
+            <th scope="col">Nota 2</th>
+        </tr>
+        <tr>
+            <th rowspan="4" scope="rowgroup">Exatas</th>
+            <td>Matemática</td>
+            <td class="centro">0.0</td>
+            <td class="centro">0.0</td>
+            <td class="centro">0.0</td>
+        </tr>
+        <tr>
+            <td>Física</td>
+            <td class="centro">0.0</td>
+            <td class="centro">0.0</td>
+            <td class="centro">0.0</td>
+        </tr>
+        <tr>
+            <td>Química</td>
+            <td class="centro">0.0</td>
+            <td class="centro">0.0</td>
+            <td class="centro">0.0</td>
+        </tr>
+        <tr>
+            <td>Biologia</td>
+            <td class="centro">0.0</td>
+            <td class="centro">0.0</td>
+            <td class="centro">0.0</td>
+        </tr>
+        <tr class="inverso">
+            <th colspan="4" scope="row" class="esquerda">Média de Exatas</th>
+            <td class="centro realce">0.0</td>
+        </tr>
+        <tr>
+            <th rowspan="2" scope="rowgroup">Humanas</th>
+            <td>História</td>
+            <td class="centro">0.0</td>
+            <td class="centro">0.0</td>
+            <td class="centro">0.0</td>
+        </tr>
+        <tr>
+            <td>Geografia</td>
+            <td class="centro">0.0</td>
+            <td class="centro">0.0</td>
+            <td class="centro">0.0</td>
+        </tr>
+        <tr class="inverso">
+            <th colspan="4" scope="rowgroup" class="esquerda">Média de Humanas</th>
+            <td class="centro realce">0.0</td>
+        </tr>
+    </table>
+
+</body>
+</html>
