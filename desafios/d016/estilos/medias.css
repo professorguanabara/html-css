@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+/*  DEVICES BREAKPOINTS
+    Telas pequenas: até 600px
+    Celulares: 600px até 768px
+    Tablets: 768px até 992px
+    Notebooks: 992px até 1200px
+    Grandes telas: acima de 1200px
+*/
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    section.coluna {
+        flex: 1 1 50%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    section.coluna {
+        flex: 1 1 25%;
+    }
+}
